@@ -1,11 +1,12 @@
 #
 # Conditional build:
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-pallets-sphinx-themes.spec)
 
 Summary:	Sphinx themes for Pallets Project documentation
 Summary(pl.UTF-8):	Motywy Sphinksa do dokumentacji z projektu Pallets
 Name:		python-pallets-sphinx-themes
+# keep 1.x here for python2 support
 Version:	1.2.3
 Release:	2
 License:	BSD
